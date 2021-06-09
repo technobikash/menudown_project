@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(21.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.menu{
+    background:green;
+    text-align: center;
+}
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active, .menu ul li:hover{
+    background:brown;
+    border-radius: 3px;
+
+}
+.menu .fa{
+    margin-right: 10px;
+}
+.sub-menu1{
+    display: none;
+}
+.menu ul li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    background: green;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu ul li:hover .sub-menu1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu ul li:hover .sub-menu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+.sub-menu2{
+    display: none;
+}
+.hover-menu:hover .sub-menu2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: green;
+}
+.sub-menu8{
+    display: none;
+}
+.menu ul li:hover .sub-menu8{
+    display: block;
+    position: absolute;
+    background: green;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu ul li:hover .sub-menu8 ul{
+    display: block;
+    margin: 10px;
+}
